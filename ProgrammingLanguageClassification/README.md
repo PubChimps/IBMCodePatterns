@@ -11,6 +11,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 Build a labeled data set
 Build a predictive model within a Jupyter Notebook
 Configure and use Watson APIs
+
+![](images/architecture.png)
+
 ## Flow
 1. The developer creates an IBM Data Science Experience Workspace.
 2. IBM Data Science Experience depends on an Apache Spark service.
