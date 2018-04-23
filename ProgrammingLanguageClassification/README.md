@@ -4,7 +4,7 @@ DISCLAIMER: This application is used for demonstrative and illustrative purposes
 # Programming Language Classification with IBM Data Science Experience, Watson, and GitHub
 
 ## Description
-In this Code Pattern, we will use a Jupyter Notebook on IBM Data Science Experience to build a predictive model that predicts a code's programming language based on its text. The model will then be evaluated against IBM's Watson Natural Languauge classifier.
+In this Code Pattern, we will use Jupyter Notebooks in IBM Watson Studio to build a model that predicts a code's programming language based on its text. The model will then be evaluated against IBM's Watson Natural Languauge classifier.
 
 When the reader has completed this Code Pattern, they will understand how to:
 
@@ -15,8 +15,8 @@ Configure and use Watson APIs
 ![](images/architecture.png)
 
 ## Flow
-1. The developer creates an IBM Data Science Experience Workspace.
-2. IBM Data Science Experience depends on an Apache Spark service.
+1. The developer creates an IBM Watson Studio Workspace.
+2. Watson Studio depends on an Apache Spark service.
 3. IBM Data Science Experience uses Cloud Object storage to manage your data.
 4. This lab is built around a Jupyter Notebook, this is where the developer will gather data, train, and evaluate their model.
 5. Create GitHub dataset.
@@ -26,7 +26,7 @@ Configure and use Watson APIs
 
 
 ## Included components
-* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [Watson Studio](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 * [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
 * [Watson Natural Language Classifier](https://www.ibm.com/watson/services/natural-language-classifier/): Understand the intent behind text passages though custom classifiers, complete with a confidence score.
 
@@ -38,17 +38,17 @@ Configure and use Watson APIs
 TBD
 
 # Steps
-2. [Create an instance of the Data Science Experience Service](#2-create-an-instance-of-the-data-science-experience-service)
-3. [Create a project in IBM Data Science Experience](#3-create-a-project-in-ibm-data-science-experience-and-bind-it-to-your-watson-machine-learning-service-instance)
-4. [Create a notebook in IBM Data Science Experience](#4-create-a-notebook-in-ibm-data-science-experience)
-5. [Run the notebook in IBM Data Science Experience](#5-run-the-notebook-in-ibm-data-science-experience)
+2. [Create an instance of the IBM Watson Studio Service](#2-create-an-instance-of-the-watson-studio-service)
+3. [Create a project in Watson Studio](#3-create-a-project-in-watson-studio-and-bind-it-to-your-watson-machine-learning-service-instance)
+4. [Create a notebook in Watson Studio](#4-create-a-notebook-in-watson-studio)
+5. [Run the notebook in Watson Studio](#5-run-the-notebook-in-watson-studio)
 
 
-### 2. Create an instance of the Data Science Experience Service
+### 2. Create an instance of the IBM Watson Studio Service
 
 * In your browser go to the IBM Cloud Dashboard and click `Catalog`.
 
-* In the navigation menu at the left, select `Data  & Analytics` (under `Platform`) and then select `Data Science Experience`.
+* In the navigation menu at the left, select `Data  & Analytics` (under `Platform`) and then select `Watson Studio`.
 
   ![](images/dsx-service.png?raw=true)
 
@@ -58,7 +58,7 @@ TBD
 
 * Click `Create`
 
-### 3. Create a project in IBM Data Science Experience
+### 3. Create a project in Watson Studio
 
 * In a new browser tab go to [https://datascience.ibm.com](https://datascience.ibm.com).
 
@@ -68,15 +68,15 @@ TBD
 
   ![](images/new-project.png?raw=true)
 
-* DSX projects depend on two services: Object Storage, and a Compute Engine.  If you don't already have Object Storage or a Compute Engine, you can create a new instance of each service while defining a new project.  The _New Project_ panel is easy to use, either select an existing service on the right, or create a new one.  In the example below services need to be created.
+* Projects depend on two services: Object Storage, and a Compute Engine.  If you don't already have Object Storage or a Compute Engine, you can create a new instance of each service while defining a new project.  The _New Project_ panel is easy to use, either select an existing service on the right, or create a new one.  In the example below services need to be created.
 
   ![](images/create-services.png?raw=true)
 
-> Note: Services created must be in the same region, and space, as your Data Science Experience service.
+> Note: Services created must be in the same region, and space, as your Watson Studio service.
 
-### 4. Create a notebook in IBM Data Science Experience
+### 4. Create a notebook in Watson Studio
 
-* If you don't have your newly created Project open, first click `Projects` -> `View All Projects`, and then select your newly created project from Step 4. Next, in the Data Science Experience browser tab click on `Overview` and then click `add notebooks`.
+* If you don't have your newly created Project open, first click `Projects` -> `View All Projects`, and then select your newly created project from Step 4. Next, in the Watson Studio browser tab click on `Overview` and then click `add notebooks`.
 
   ![](images/add-notebook.png?raw=true)
 
@@ -88,7 +88,7 @@ TBD
 
 * Click `Create Notebook` to create the new notebook.
 
-### 5. Run the notebook in IBM Data Science Experience
+### 5. Run the notebook in Watson Studio
 
 * Place your cursor in the first code block in the notebook.
 * Click on the `Run` icon to run the code in the cell.
