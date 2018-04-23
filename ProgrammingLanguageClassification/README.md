@@ -1,7 +1,7 @@
 
 DISCLAIMER: This application is used for demonstrative and illustrative purposes only and does not constitute an offering that has gone through regulatory review.
 
-# Programming Language Classification with IBM Data Science Experience, Watson, and GitHub
+# Programming Language Classification with IBM Watson Studio, Watson, and GitHub
 
 ## Description
 In this Code Pattern, we will use Jupyter Notebooks in IBM Watson Studio to build a model that predicts a code's programming language based on its text. The model will then be evaluated against IBM's Watson Natural Languauge classifier.
