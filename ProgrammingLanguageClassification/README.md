@@ -38,23 +38,23 @@ Configure and use Watson APIs
 TBD
 
 # Steps
-2. [Create an instance of the IBM Watson Studio Service](#2-create-an-instance-of-the-watson-studio-service)
-3. [Create a project in Watson Studio](#3-create-a-project-in-watson-studio-and-bind-it-to-your-watson-machine-learning-service-instance)
-4. [Create a notebook in Watson Studio](#4-create-a-notebook-in-watson-studio)
-5. [Run the notebook in Watson Studio](#5-run-the-notebook-in-watson-studio)
+1. [Create an instance of the IBM Watson Studio Service](#1-create-an-instance-of-the-watson-studio-service)
+2. [Create a project in Watson Studio](#2-create-a-project-in-watson-studio-and-bind-it-to-your-watson-machine-learning-service-instance)
+3. [Create a notebook in Watson Studio](#3-create-a-notebook-in-watson-studio)
+4. [Run the notebooks in Watson Studio](#4-run-the-notebook-in-watson-studio)
 
 
-### 2. Create an instance of the IBM Watson Studio Service
+### 1. Create an instance of the IBM Watson Studio Service
 
 * In your browser go to the IBM Cloud Dashboard and click `Catalog`.
 
-* In the navigation menu at the left, select `Data  & Analytics` (under `Platform`) and then select `Watson Studio`.
+* Search for and select `Watson Studio`.
 
-  ![](images/dsx-service.png?raw=true)
+  ![](images/dsx-service.jpg?raw=true)
 
-* Verify this service is being created in the same space as the app in Step 2.
+* Verify the service being created is under the Lite plan.
 
-  ![](images/dsx-create.png?raw=true)
+  ![](images/dsx-create.jpg?raw=true)
 
 * Click `Create`
 
@@ -64,7 +64,7 @@ TBD
 
 * Click on `Sign In` at the top of the page.
 
-* From the dashboard, click on `New Project` from the dashboard.
+* From the dashboard, click on `New Project` from the dashboard, select a `Complete` project.
 
   ![](images/new-project.png?raw=true)
 
